@@ -22,7 +22,7 @@ In order to make an image reproducible, `generative art` implements a log file t
 You can install the package with the `devtools` package directly from Github:
 
 ```r
-devtools::install_github("cutterkom/generativeart")
+devtools::install_github("lenyapugachev/generativeart")
 ```
 
 `generativeart` uses the packages `ggplot2`, `magrittr`, `purrr` and `dplyr`.

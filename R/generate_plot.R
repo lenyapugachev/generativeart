@@ -16,7 +16,7 @@
 #' @import ggplot2
 #' @importFrom magrittr %>%
 
-generate_plot <- function(df, file_name, polar, filetype, color = "black", background_color = "white") {
+generate_plot <- function(df, file_name, polar, filetype, color = "black", background_color = "white", width = 6, height = 6) {
   print("generate plot")
   if (polar == TRUE) {
     plot <- df %>%
@@ -40,6 +40,6 @@ generate_plot <- function(df, file_name, polar, filetype, color = "black", backg
         plot.background = element_rect(fill = background_color)
         )
   }
-  ggplot2::ggsave(plot, filename = paste0(IMG_PATH, file_name), width = 6, height = 6, device = filetype)
+  ggplot2::ggsave(plot, filename = paste0(IMG_PATH, file_name), width = width, height = height, device = filetype)
   print("image saved...")
 }
